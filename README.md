@@ -164,7 +164,7 @@
     + ![alt text](26.png)
 
 # 4. Pipeline
-## 4.1 variables
+## 4.1 Variables
 - Thêm variables cho repo
     - `DOCKER_REGISTRY_USER`: `hopnguyenn`
     - `DOCKER_REGISTRY_PASSWORD`: `Docker123@`
@@ -187,9 +187,9 @@
             - deploy
 
         variables:
-        DOCKER_HUB_REPO: "hopnguyenn/firegroup-demo"
-        DOCKER_REGISTRY_HOST: "https://index.docker.io/v1/"
-        DOCKERFILE_PATH: "$CI_PROJECT_DIR/docker/Dockerfile"
+            DOCKER_HUB_REPO: "hopnguyenn/firegroup-demo"
+            DOCKER_REGISTRY_HOST: "https://index.docker.io/v1/"
+            DOCKERFILE_PATH: "$CI_PROJECT_DIR/docker/Dockerfile"
 
         build and push:
             stage: build and push
